@@ -18,3 +18,6 @@ cp /usr/local/plan9/bin/awk /usr/bin/awk
 
 cp /bin/sleep /bin/sleep-backup
 cp /usr/local/plan9/bin/sleep /bin/sleep
+
+cp /bin/cat /bin/cat-backup
+cp /usr/local/plan9/bin/cat /bin/cat
