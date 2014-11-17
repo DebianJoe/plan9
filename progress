@@ -38,3 +38,8 @@ cp /usr/local/plan9/bin/sha1sum /usr/bin/sha1sum
 
 cp /bin/sed /bin/sed-backup
 cp /usr/local/plan9/bin/sed /bin/sed
+
+cp /usr/bin/wc /usr/bin/wc-backup
+cp /usr/local/plan9/bin/wc /usr/bin/wc
+
+# this system does not have existing cal, mtime, primes, read
