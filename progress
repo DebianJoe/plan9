@@ -7,5 +7,11 @@ mv /usr/local/plan9/bin/bc /usr/bin/bc
 cp /bin/ls /bin/ls-backup
 mv /usr/local/plan9/bin/ls /bin/ls
 
-cp /bin/mkdir /bin/mkdir-backup
-cp /usr/local/plan9/bin/mkdir /bin/mkdir
+## WARNING, if you use a symlink for /dev/shm...
+## ...this will fry your shit.
+
+# cp /bin/mkdir /bin/mkdir-backup
+# cp /usr/local/plan9/bin/mkdir /bin/mkdir
+
+cp /usr/bin/awk /usr/bin/awk-backup
+cp /usr/local/plan9/bin/awk /usr/bin/awk
