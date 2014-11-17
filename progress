@@ -81,8 +81,14 @@ cp /usr/local/plan9/bin/cmp /usr/bin/cmp
 cp /usr/bin/sort /usr/bin/sort-backup
 cp /usr/local/plan9/bin/sort /usr/bin/sort
 
+cp /usr/bin/seq /usr/bin/seq-backup
+cp /usr/local/plan9/bin/seq /usr/bin/seq
+
+cp /usr/bin/strings /usr/bin/strings-backup
+cp /usr/local/plan9/bin/strings /usr/bin/strings
+
 # this system does not have existing cal, mtime, primes, read
-# dc, ascii, fortune, yacc, look, cleanname(duh), 
+# dc, ascii, fortune, yacc, look, cleanname(duh), read,
 mv /usr/local/plan9/bin/cal /bin/cal
 mv /usr/local/plan9/bin/primes /usr/bin/primes
 mv /usr/local/plan9/bin/mtime /usr/bin/mtime
@@ -92,3 +98,4 @@ mv /usr/local/plan9/bin/fortune /usr/bin/fortune
 mv /usr/local/plan9/bin/yacc /usr/bin/yacc
 mv /usr/local/plan9/bin/look /usr/bin/look
 mv /usr/local/plan9/bin/cleanname /usr/bin/cleanname
+mv /usr/local/plan9/bin/read /usr/bin/read
