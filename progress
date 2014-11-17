@@ -29,3 +29,9 @@ cp /usr/local/plan9/bin/date /bin/date
 
 cp /usr/bin/split /usr/bin/split-backup
 cp /usr/local/plan9/bin/split /usr/bin/split
+
+cp /usr/bin/md5sum /usr/bin/md5sum-backup
+cp /usr/local/plan9/bin/md5sum /usr/bin/md5sum
+
+cp /usr/bin/sha1sum /usr/bin/sha1sum-backup
+cp /usr/local/plan9/bin/sha1sum /usr/bin/sha1sum
