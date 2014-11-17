@@ -87,8 +87,12 @@ cp /usr/local/plan9/bin/seq /usr/bin/seq
 cp /usr/bin/strings /usr/bin/strings-backup
 cp /usr/local/plan9/bin/strings /usr/bin/strings
 
+cp /usr/bin/tee /usr/bin/tee-backup
+cp /usr/local/plan9/bin/tee /usr/bin/tee
+
 # this system does not have existing cal, mtime, primes, read
-# dc, ascii, fortune, yacc, look, cleanname(duh), read,
+# dc, ascii, fortune, yacc, look, cleanname(duh), read, pbd
+# 
 mv /usr/local/plan9/bin/cal /bin/cal
 mv /usr/local/plan9/bin/primes /usr/bin/primes
 mv /usr/local/plan9/bin/mtime /usr/bin/mtime
@@ -99,3 +103,4 @@ mv /usr/local/plan9/bin/yacc /usr/bin/yacc
 mv /usr/local/plan9/bin/look /usr/bin/look
 mv /usr/local/plan9/bin/cleanname /usr/bin/cleanname
 mv /usr/local/plan9/bin/read /usr/bin/read
+mv /usr/local/plan9/bin/pbd /usr/bin/pbd
