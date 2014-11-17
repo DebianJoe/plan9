@@ -96,9 +96,12 @@ cp /usr/local/plan9/bin/troff /usr/bin/troff
 cp /usr/bin/join /usr/bin/join-backup
 cp /usr/local/plan9/bin/join /usr/bin/join
 
+cp /usr/bin/test /usr/bin/test-backup
+cp /usr/local/plan9/bin/test /usr/bin/test
+
 # this system does not have existing cal, mtime, primes, read
 # dc, ascii, fortune, yacc, look, cleanname(duh), read, pbd
-# ed, hoc, sam, listen1
+# ed, hoc, sam, listen1, unicode, ssam, getflags, 
 
 mv /usr/local/plan9/bin/cal /bin/cal
 mv /usr/local/plan9/bin/primes /usr/bin/primes
@@ -115,3 +118,6 @@ mv /usr/local/plan9/bin/ed /usr/bin/ed
 mv /usr/local/plan9/bin/hoc /usr/bin/hoc
 mv /usr/local/plan9/bin/sam /usr/bin/sam
 mv /usr/local/plan9/bin/listen1 /usr/bin/listen1
+mv /usr/local/plan9/bin/unicode /usr/bin/unicode
+mv /usr/local/plan9/bin/ssam /usr/bin/ssam
+mv /usr/local/plan9/bin/getflags /usr/bin/getflags
