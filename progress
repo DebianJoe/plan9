@@ -75,8 +75,14 @@ cp /usr/local/plan9/bin/uniq /usr/bin/uniq
 cp /bin/echo /bin/echo-backup
 cp /usr/local/plan9/bin/echo /bin/echo
 
+cp /usr/bin/cmp /usr/bin/cmp-backup
+cp /usr/local/plan9/bin/cmp /usr/bin/cmp
+
+cp /usr/bin/sort /usr/bin/sort-backup
+cp /usr/local/plan9/bin/sort /usr/bin/sort
+
 # this system does not have existing cal, mtime, primes, read
-# dc, ascii, fortune, yacc, look, 
+# dc, ascii, fortune, yacc, look, cleanname(duh), 
 mv /usr/local/plan9/bin/cal /bin/cal
 mv /usr/local/plan9/bin/primes /usr/bin/primes
 mv /usr/local/plan9/bin/mtime /usr/bin/mtime
@@ -85,3 +91,4 @@ mv /usr/local/plan9/bin/ascii /bin/ascii
 mv /usr/local/plan9/bin/fortune /usr/bin/fortune
 mv /usr/local/plan9/bin/yacc /usr/bin/yacc
 mv /usr/local/plan9/bin/look /usr/bin/look
+mv /usr/local/plan9/bin/cleanname /usr/bin/cleanname
