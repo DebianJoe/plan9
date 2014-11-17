@@ -45,4 +45,13 @@ cp /usr/local/plan9/bin/wc /usr/bin/wc
 cp /usr/bin/tail /usr/bin/tail-backup
 cp /usr/local/plan9/bin/tail /usr/bin/tail
 
+## WARNING, udev fails, other chaos ensues
+## ...fsck yells at you and forces reboot
+## after restoring grep to backup.
+# cp /bin/grep /bin/grep-backup
+# cp /usr/local/plan9/bin/grep /bin/grep
+
 # this system does not have existing cal, mtime, primes, read
+mv /usr/local/plan9/bin/cal /bin/cal
+mv /usr/local/plan9/bin/primes /usr/bin/primes
+mv /usr/local/plan9/bin/mtime /usr/bin/mtime
