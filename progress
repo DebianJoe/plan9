@@ -35,3 +35,6 @@ cp /usr/local/plan9/bin/md5sum /usr/bin/md5sum
 
 cp /usr/bin/sha1sum /usr/bin/sha1sum-backup
 cp /usr/local/plan9/bin/sha1sum /usr/bin/sha1sum
+
+cp /bin/sed /bin/sed-backup
+cp /usr/local/plan9/bin/sed /bin/sed
