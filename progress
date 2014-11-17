@@ -36,6 +36,7 @@ cp /usr/local/plan9/bin/md5sum /usr/bin/md5sum
 cp /usr/bin/sha1sum /usr/bin/sha1sum-backup
 cp /usr/local/plan9/bin/sha1sum /usr/bin/sha1sum
 
+# ...this will probably break things too
 cp /bin/sed /bin/sed-backup
 cp /usr/local/plan9/bin/sed /bin/sed
 
@@ -55,6 +56,9 @@ cp /usr/local/plan9/bin/tail /usr/bin/tail
 # what I can tell so far.
 cp /bin/rm /bin/rm-backup
 cp /usr/local/plan9/bin/rm /bin/rm
+
+cp /usr/bin/basename /usr/bin/basename-backup
+cp /usr/local/plan9/bin/basename /usr/bin/basename
 
 # this system does not have existing cal, mtime, primes, read
 # dc, ascii, 
