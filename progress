@@ -21,3 +21,6 @@ cp /usr/local/plan9/bin/sleep /bin/sleep
 
 cp /bin/cat /bin/cat-backup
 cp /usr/local/plan9/bin/cat /bin/cat
+
+cp /usr/bin/touch /usr/bin/touch-backup
+cp /usr/local/plan9/bin/touch /usr/bin/touch
