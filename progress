@@ -42,4 +42,7 @@ cp /usr/local/plan9/bin/sed /bin/sed
 cp /usr/bin/wc /usr/bin/wc-backup
 cp /usr/local/plan9/bin/wc /usr/bin/wc
 
+cp /usr/bin/tail /usr/bin/tail-backup
+cp /usr/local/plan9/bin/tail /usr/bin/tail
+
 # this system does not have existing cal, mtime, primes, read
