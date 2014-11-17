@@ -90,9 +90,16 @@ cp /usr/local/plan9/bin/strings /usr/bin/strings
 cp /usr/bin/tee /usr/bin/tee-backup
 cp /usr/local/plan9/bin/tee /usr/bin/tee
 
+cp /usr/bin/troff /usr/bin/troff-backup
+cp /usr/local/plan9/bin/troff /usr/bin/troff
+
+cp /usr/bin/join /usr/bin/join-backup
+cp /usr/local/plan9/bin/join /usr/bin/join
+
 # this system does not have existing cal, mtime, primes, read
 # dc, ascii, fortune, yacc, look, cleanname(duh), read, pbd
-# 
+# ed, hoc, sam, listen1
+
 mv /usr/local/plan9/bin/cal /bin/cal
 mv /usr/local/plan9/bin/primes /usr/bin/primes
 mv /usr/local/plan9/bin/mtime /usr/bin/mtime
@@ -104,3 +111,7 @@ mv /usr/local/plan9/bin/look /usr/bin/look
 mv /usr/local/plan9/bin/cleanname /usr/bin/cleanname
 mv /usr/local/plan9/bin/read /usr/bin/read
 mv /usr/local/plan9/bin/pbd /usr/bin/pbd
+mv /usr/local/plan9/bin/ed /usr/bin/ed
+mv /usr/local/plan9/bin/hoc /usr/bin/hoc
+mv /usr/local/plan9/bin/sam /usr/bin/sam
+mv /usr/local/plan9/bin/listen1 /usr/bin/listen1
