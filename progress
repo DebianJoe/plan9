@@ -63,10 +63,18 @@ cp /usr/local/plan9/bin/basename /usr/bin/basename
 cp /usr/bin/diff /usr/bin/diff-backup
 cp /usr/local/plan9/bin/diff /usr/bin/diff
 
+cp /usr/bin/factor /usr/bin/factor-backup
+cp /usr/local/plan9/bin/factor /usr/bin/factor
+
+cp /usr/bin/sort /usr/bin/sort-backup
+cp /usr/local/plan9/bin/sort /usr/bin/sort
+
 # this system does not have existing cal, mtime, primes, read
-# dc, ascii, 
+# dc, ascii, fortune, yacc
 mv /usr/local/plan9/bin/cal /bin/cal
 mv /usr/local/plan9/bin/primes /usr/bin/primes
 mv /usr/local/plan9/bin/mtime /usr/bin/mtime
 mv /usr/local/plan9/bin/dc /bin/dc
 mv /usr/local/plan9/bin/ascii /bin/ascii
+mv /usr/local/plan9/bin/fortune /usr/bin/fortune
+mv /usr/local/plan9/bin/yacc /usr/bin/yacc
