@@ -121,3 +121,8 @@ mv /usr/local/plan9/bin/listen1 /usr/bin/listen1
 mv /usr/local/plan9/bin/unicode /usr/bin/unicode
 mv /usr/local/plan9/bin/ssam /usr/bin/ssam
 mv /usr/local/plan9/bin/getflags /usr/bin/getflags
+
+# Some of the rc scripts that I find useful, feel free to
+# comment these out.
+
+mv ./lsa /usr/local/lsa
