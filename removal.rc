@@ -1,0 +1,33 @@
+#!/usr/local/plan9/bin/rc
+
+## This script uses the plan9 shell to clean out the backups ##
+## made with the progress script.  Run as root. ##
+## ...totally unsafe script. ##
+
+rm /bin/cat-backup
+rm /bin/date-backup
+rm /bin/echo-backup
+rm /bin/ls-backup
+rm /bin/rm-backup
+rm /bin/sleep-backup
+
+rm /usr/bin/awk-backup
+rm /usr/bin/basename-backup
+rm /usr/bin/cmp-backup
+rm /usr/bin/diff-backup
+rm /usr/bin/factor-backup
+rm /usr/bin/join-backup
+rm /usr/bin/md5sum-backup
+rm /usr/bin/seq-backup
+rm /usr/bin/sha1sum-backup
+rm /usr/bin/sort-backup
+rm /usr/bin/split-backup
+rm /usr/bin/strings-backup
+rm /usr/bin/tail-backup
+rm /usr/bin/tee-backup
+rm /usr/bin/test-backup
+rm /usr/bin/touch-backup
+rm /usr/bin/troff-backup
+rm /usr/bin/uniq-backup
+rm /usr/bin/wc-backup
+#
