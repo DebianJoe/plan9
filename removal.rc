@@ -4,6 +4,7 @@
 ## made with the progress script.  Run as root. ##
 ## ...totally unsafe script. ##
 
+echo "rc shell working, beginning cleanup"
 rm /bin/cat-backup
 rm /bin/date-backup
 rm /bin/echo-backup
