@@ -1,9 +1,14 @@
 #!/bin/sh
 #copy /usr/bin/bc /usr/bin/bc-backup
 
+echo "writing rc shell to /etc/shells"
+echo '/usr/local/plan9/bin/rc' >> /etc/shells
+
+echo "converting to plan9 bc"
 cp /usr/bin/bc /usr/bin/bc-backup
 mv /usr/local/plan9/bin/bc /usr/bin/bc
 
+echo "converting to plan9 ls"
 cp /bin/ls /bin/ls-backup
 mv /usr/local/plan9/bin/ls /bin/ls
 
@@ -12,37 +17,48 @@ mv /usr/local/plan9/bin/ls /bin/ls
 # cp /bin/mkdir /bin/mkdir-backup
 # cp /usr/local/plan9/bin/mkdir /bin/mkdir
 
+echo "converting to plan9 awk"
 cp /usr/bin/awk /usr/bin/awk-backup
 cp /usr/local/plan9/bin/awk /usr/bin/awk
 
+echo "converting to plan9 sleep"
 cp /bin/sleep /bin/sleep-backup
 cp /usr/local/plan9/bin/sleep /bin/sleep
 
+echo "converting to plan9 cat"
 cp /bin/cat /bin/cat-backup
 cp /usr/local/plan9/bin/cat /bin/cat
 
+echo "converting to plan9 touch"
 cp /usr/bin/touch /usr/bin/touch-backup
 cp /usr/local/plan9/bin/touch /usr/bin/touch
 
+echo "converting to plan9 date"
 cp /bin/date /bin/date-backup
 cp /usr/local/plan9/bin/date /bin/date
 
+echo "converting to plan9 split"
 cp /usr/bin/split /usr/bin/split-backup
 cp /usr/local/plan9/bin/split /usr/bin/split
 
+echo "converting to plan9 md5sum"
 cp /usr/bin/md5sum /usr/bin/md5sum-backup
 cp /usr/local/plan9/bin/md5sum /usr/bin/md5sum
 
+echo "converting to plan9 sha1sum"
 cp /usr/bin/sha1sum /usr/bin/sha1sum-backup
 cp /usr/local/plan9/bin/sha1sum /usr/bin/sha1sum
 
+echo "converting to plan9 sed"
 # ...this will probably break things too
 cp /bin/sed /bin/sed-backup
 cp /usr/local/plan9/bin/sed /bin/sed
 
+echo "converting to plan9 wc"
 cp /usr/bin/wc /usr/bin/wc-backup
 cp /usr/local/plan9/bin/wc /usr/bin/wc
 
+echo "converting to plan9 tail"
 cp /usr/bin/tail /usr/bin/tail-backup
 cp /usr/local/plan9/bin/tail /usr/bin/tail
 
@@ -54,48 +70,59 @@ cp /usr/local/plan9/bin/tail /usr/bin/tail
 
 # This works with rc as shell, not otherwise from
 # what I can tell so far.
+echo "converting to plan9 rm"
 cp /bin/rm /bin/rm-backup
 cp /usr/local/plan9/bin/rm /bin/rm
 
+echo "converting to plan9 basename"
 cp /usr/bin/basename /usr/bin/basename-backup
 cp /usr/local/plan9/bin/basename /usr/bin/basename
 
+echo "converting to plan9 diff"
 cp /usr/bin/diff /usr/bin/diff-backup
 cp /usr/local/plan9/bin/diff /usr/bin/diff
 
+echo "converting to plan9 factor"
 cp /usr/bin/factor /usr/bin/factor-backup
 cp /usr/local/plan9/bin/factor /usr/bin/factor
 
+echo "converting to plan9 sort"
 cp /usr/bin/sort /usr/bin/sort-backup
 cp /usr/local/plan9/bin/sort /usr/bin/sort
 
+echo "converting to plan9 uniq"
 cp /usr/bin/uniq /usr/bin/uniq-backup
 cp /usr/local/plan9/bin/uniq /usr/bin/uniq
 
+echo "converting to plan9 echo"
 cp /bin/echo /bin/echo-backup
 cp /usr/local/plan9/bin/echo /bin/echo
 
+echo "converting to plan9 cmp"
 cp /usr/bin/cmp /usr/bin/cmp-backup
 cp /usr/local/plan9/bin/cmp /usr/bin/cmp
 
-cp /usr/bin/sort /usr/bin/sort-backup
-cp /usr/local/plan9/bin/sort /usr/bin/sort
-
+echo "converting to plan9 seq"
 cp /usr/bin/seq /usr/bin/seq-backup
 cp /usr/local/plan9/bin/seq /usr/bin/seq
 
+echo "converting to plan9 strings"
 cp /usr/bin/strings /usr/bin/strings-backup
 cp /usr/local/plan9/bin/strings /usr/bin/strings
 
+echo "converting to plan9 tee"
 cp /usr/bin/tee /usr/bin/tee-backup
 cp /usr/local/plan9/bin/tee /usr/bin/tee
 
+echo "converting to plan9 troff"
 cp /usr/bin/troff /usr/bin/troff-backup
 cp /usr/local/plan9/bin/troff /usr/bin/troff
 
+echo "converting to plan9 join"
 cp /usr/bin/join /usr/bin/join-backup
 cp /usr/local/plan9/bin/join /usr/bin/join
 
+echo "converting to plan9 test"
 cp /usr/bin/test /usr/bin/test-backup
 cp /usr/local/plan9/bin/test /usr/bin/test
 
@@ -103,26 +130,50 @@ cp /usr/local/plan9/bin/test /usr/bin/test
 # dc, ascii, fortune, yacc, look, cleanname(duh), read, pbd
 # ed, hoc, sam, listen1, unicode, ssam, getflags, 
 
+echo "moving the following into /bin or /usr/bin"
+echo "cal"
 mv /usr/local/plan9/bin/cal /bin/cal
+echo "primes"
 mv /usr/local/plan9/bin/primes /usr/bin/primes
+echo "mtime"
 mv /usr/local/plan9/bin/mtime /usr/bin/mtime
+echo "dc"
 mv /usr/local/plan9/bin/dc /bin/dc
+echo "ascii"
 mv /usr/local/plan9/bin/ascii /bin/ascii
+echo "fortune"
 mv /usr/local/plan9/bin/fortune /usr/bin/fortune
+echo "yacc"
 mv /usr/local/plan9/bin/yacc /usr/bin/yacc
+echo "look"
 mv /usr/local/plan9/bin/look /usr/bin/look
+echo "cleanname"
 mv /usr/local/plan9/bin/cleanname /usr/bin/cleanname
+echo "read"
 mv /usr/local/plan9/bin/read /usr/bin/read
+echo "pbd"
 mv /usr/local/plan9/bin/pbd /usr/bin/pbd
+echo "ed...the original"
 mv /usr/local/plan9/bin/ed /usr/bin/ed
+echo "hoc"
 mv /usr/local/plan9/bin/hoc /usr/bin/hoc
+echo "sam"
 mv /usr/local/plan9/bin/sam /usr/bin/sam
+echo "listen1"
 mv /usr/local/plan9/bin/listen1 /usr/bin/listen1
+echo "unicode"
 mv /usr/local/plan9/bin/unicode /usr/bin/unicode
+echo "ssam"
 mv /usr/local/plan9/bin/ssam /usr/bin/ssam
+echo "get flags"
 mv /usr/local/plan9/bin/getflags /usr/bin/getflags
 
-# Some of the rc scripts that I find useful, feel free to
-# comment these out.
 
-mv ./lsa /usr/local/lsa
+echo "Now, you can covert your shell to"
+echo "/usr/local/plan9/bin/rc for the rc shell"
+echo "then run /usr/local/plan9/removal.rc"
+
+# Some of the rc scripts that I find useful, feel free to
+# use them if you'd like.
+
+# mv ./lsa /usr/local/lsa
